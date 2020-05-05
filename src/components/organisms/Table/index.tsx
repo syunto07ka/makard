@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './style.module.scss';
 
+// FIXME: separate to few components
 const Table: React.FC = () => (
   <div styleName="table">
     <div styleName="thead">
