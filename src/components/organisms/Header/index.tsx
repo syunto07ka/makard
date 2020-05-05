@@ -1,5 +1,6 @@
 import * as React from 'react';
 import './style.module.scss';
+import { Link } from 'react-router-dom';
 
 interface Props {
   displayName: string;
@@ -17,9 +18,10 @@ const Header: React.FC<Props> = ({ displayName, iconPath, userId }) => {
           <div styleName="userId">{userId}</div>
         </div>
         <div styleName="list">
-          <a styleName="item" href="/">マイリスト</a>
+          <Link styleName="item" to="/">マイリスト</Link>
+          <Link styleName="item" to="/profile">プロフィール</Link>
         </div>
-        <a styleName="new-link" href="/create">＋ 新規作成</a>
+        <Link styleName="new-link" to="/create">＋ 新規作成</Link>
       </div>
     </>
   );
