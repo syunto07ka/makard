@@ -1,0 +1,28 @@
+.table {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #d8d8d8;
+  box-shadow: 2px 2px 8px #d8d8d8;
+  padding: 16px;
+}
+
+.thead {}
+
+.tr {
+  display: flex;
+  padding: 16px 0;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.th {
+  width: 100%;
+  text-align: center;
+}
+
+.tbody {}
+
+.td {
+  width: 100%;
+  text-align: center;
+}
