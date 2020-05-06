@@ -4,15 +4,19 @@ import Card from 'components/molecules/Card';
 import Modal from 'components/organisms/Modal';
 import ModalWrapper from 'components/templates/ModalWrapper';
 
-const CreateCard: React.FC = () => {
-  // FIXME: create a modal controll implement
-  if (true) {
+interface Props {
+  isCreateCardOpen: boolean;
+  closeCreateCard: () => void;
+}
+
+const CreateCard: React.FC<Props> = ({ isCreateCardOpen, closeCreateCard }) => {
+  if (!isCreateCardOpen) {
     return <></>;
   }
 
   return (
     <ModalWrapper>
-      <Modal title="新規作成">
+      <Modal title="新規作成" closeModal={closeCreateCard}>
         <div styleName="card-wrapper">
           <Card />
         </div>

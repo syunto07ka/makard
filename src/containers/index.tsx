@@ -2,7 +2,6 @@ import * as React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ListContainer from 'containers/pages/List';
 import ProfileContainer from 'containers/pages/Profile';
-import CreateCard from 'containers/modals/CreateCard';
 
 const Containers: React.FC = () => (
   <React.Fragment>
@@ -16,7 +15,6 @@ const Containers: React.FC = () => (
         </Route>
       </Switch>
     </Router>
-    <CreateCard />
   </React.Fragment>
 );
 
