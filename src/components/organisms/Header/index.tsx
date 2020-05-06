@@ -21,7 +21,6 @@ const Header: React.FC<Props> = ({ displayName, iconPath, userId }) => {
           <Link styleName="item" to="/">マイリスト</Link>
           <Link styleName="item" to="/profile">プロフィール</Link>
         </div>
-        <Link styleName="new-link" to="/create">＋ 新規作成</Link>
       </div>
     </>
   );
