@@ -3,14 +3,15 @@ import './style.module.scss';
 
 interface Props {
   title: string;
+  closeModal: () => void;
 }
 
-const Modal: React.FC<Props> = ({ title, children }) => (
+const Modal: React.FC<Props> = ({ title, closeModal, children }) => (
   <div styleName="modal">
     <div styleName="heading">
       <div></div>
       <div styleName="title">{title}</div>
-      <div styleName="close">閉じる</div>
+      <button styleName="close" onClick={closeModal}>閉じる</button>
     </div>
     {children}
   </div>
