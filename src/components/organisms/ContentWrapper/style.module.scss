@@ -3,9 +3,18 @@
   width: 100%;
 }
 
+.heading {
+  display: flex;
+  justify-content: space-between;
+}
+
 .title {
   font-weight: bold;
   font-size: 19px;
+}
+
+.button {
+  
 }
 
 .content {
